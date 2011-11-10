@@ -20,8 +20,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "expiring_token"
   gem.homepage = "http://github.com/captainu/expiring_token"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: Generate and validate time expiring tokens}
-  gem.description = %Q{TODO: Generate and validate time expiring tokens}
+  gem.summary = %Q{Generate and validate time expiring tokens}
+  gem.description = %Q{Generate and validate time expiring tokens}
   gem.email = "moen@captainu.com"
   gem.authors = ["Michael Moen"]
   # dependencies defined in Gemfile
