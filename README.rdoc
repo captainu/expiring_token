@@ -1,9 +1,14 @@
 = expiring_token
 
-Description goes here.
+Generate and validate time expiring tokens
+
+== TODO
+
+* add tests
+* add docs
 
 == Contributing to expiring_token
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
 * Fork the project
@@ -14,6 +19,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 Michael Moen. See LICENSE.txt for
+Copyright (c) 2011 CaptainU. See LICENSE.txt for
 further details.
 
