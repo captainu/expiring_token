@@ -1,7 +1,6 @@
 require 'openssl'
 require 'base64'
 require 'digest/sha2'
-require 'cgi'
 require 'time'
 
 class TokenExpired < StandardError; end
@@ -15,12 +14,12 @@ class ExpiringToken
     cipher.key = Digest::SHA2.digest(key)
     token = cipher.update(Time.now.gmtime.to_s)
     token << cipher.final
-    CGI.escape(Base64.encode64(token))
+    Base64.encode64(token)
   end
 
   def self.valid?(token, key, lifespan)
     begin
-      token = Base64.decode64(CGI.unescape(token))
+      token = Base64.decode64(token)
       cipher = OpenSSL::Cipher::Cipher.new("AES-256-CBC")
       cipher.decrypt
       cipher.key = Digest::SHA2.digest(key)
