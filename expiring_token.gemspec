@@ -10,7 +10,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Michael Moen"]
   s.date = "2011-11-10"
-  s.description = "TODO: Generate and validate time expiring tokens"
+  s.description = "Generate and validate time expiring tokens"
   s.email = "moen@captainu.com"
   s.extra_rdoc_files = [
     "LICENSE.txt",
@@ -20,10 +20,12 @@ Gem::Specification.new do |s|
     ".document",
     ".rspec",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "expiring_token.gemspec",
     "lib/expiring_token.rb",
     "spec/expiring_token_spec.rb",
     "spec/spec_helper.rb"
@@ -32,7 +34,7 @@ Gem::Specification.new do |s|
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.10"
-  s.summary = "TODO: Generate and validate time expiring tokens"
+  s.summary = "Generate and validate time expiring tokens"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
