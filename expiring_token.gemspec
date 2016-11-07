@@ -36,13 +36,6 @@ Gem::Specification.new do |s|
   s.rubygems_version = "1.8.10"
   s.summary = "Generate and validate time expiring tokens"
 
-  # Prevent pushing this gem to RubyGems.org by setting "allowed_push_host", or
-  # delete this section to allow pushing this gem to any host.
-  if s.respond_to?(:metadata)
-    s.metadata['allowed_push_host'] = "http://gems.captainu.com:9292/private"
-  else
-    raise "RubyGems 2.0 or newer is required to protect against public gem pushes."
-  end
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
